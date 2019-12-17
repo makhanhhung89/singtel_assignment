@@ -3,11 +3,13 @@ package com.singtel.assignment.model;
 public class Bird extends Animal {
 	
 	public void fly() {
-		System.out.println("I am flying");
+		if (canFly())
+			System.out.println("I am flying");
 	}
 	
 	public void sing() {
-		System.out.println("I am singing");
+		if (canSing())
+			System.out.println("I am singing");
 	}
 	
 	@Override

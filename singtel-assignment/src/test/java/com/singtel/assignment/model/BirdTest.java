@@ -6,7 +6,6 @@ import org.junit.Test;
 
 public class BirdTest extends AbstractTest {
 	
-	
 	@Test
 	public void testBirdSing_ReturnIamsinging() {
 		Bird bird = new Bird();
