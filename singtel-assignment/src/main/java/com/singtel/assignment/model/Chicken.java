@@ -1,20 +1,17 @@
 package com.singtel.assignment.model;
 
-public class Bird extends Animal {
-	
-	public void fly() {
-		System.out.println("I am flying");
-	}
-	
+public class Chicken extends Bird {
+
+	@Override
 	public void sing() {
-		System.out.println("I am singing");
+		System.out.println("Cluck, cluck");
 	}
-	
+
 	@Override
 	public boolean canFly() {
-		return true;
+		return false;
 	}
-	
+
 	@Override
 	public boolean canSwim() {
 		return false;
