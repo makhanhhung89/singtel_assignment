@@ -38,9 +38,9 @@ public class CountingAnimal {
 				 new Cat()
 				};
 		
-		System.out.println(Arrays.stream(animals).filter(a -> a.canFly()).count() + " can fly");
-		System.out.println(Arrays.stream(animals).filter(a -> a.canSing()).count() + " can sing");
-		System.out.println(Arrays.stream(animals).filter(a -> a.canSwim()).count() + " can swim");
-		System.out.println(Arrays.stream(animals).filter(a -> a.canWalk()).count() + " can walk");
+		System.out.println(Arrays.stream(animals).filter(a -> a.canFly()).count() + " animals can fly");
+		System.out.println(Arrays.stream(animals).filter(a -> a.canSing()).count() + " animals can sing");
+		System.out.println(Arrays.stream(animals).filter(a -> a.canSwim()).count() + " animals can swim");
+		System.out.println(Arrays.stream(animals).filter(a -> a.canWalk()).count() + " animal scan walk");
 	}
 }
