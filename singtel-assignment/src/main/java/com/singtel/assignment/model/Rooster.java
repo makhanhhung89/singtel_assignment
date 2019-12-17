@@ -1,6 +1,6 @@
 package com.singtel.assignment.model;
 
-public class Rooster extends Chicken {
+public class Rooster extends Chicken implements MakeSoundable {
 
 	@Override
 	public void sing() {
