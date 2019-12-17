@@ -8,6 +8,15 @@ public class Butterfly extends Bird {
 	
 	private LifeStage stage = LifeStage.CATERPILLAR;
 	
+	public Butterfly(LifeStage stage) {
+		super();
+		this.stage = stage;
+	}
+	
+	public Butterfly() {
+		super();
+	}
+
 	@Override
 	public boolean canSwim() {
 		return false;

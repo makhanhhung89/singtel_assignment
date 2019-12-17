@@ -32,13 +32,13 @@ public class ParrotTest extends AbstractTest {
 	
 	@Test
 	public void testParrotCanSwim_ReturnFalse() {
-		Parrot parrot = new Parrot();
+		Parrot parrot = new Parrot(null);
 		Assert.assertThat("parrot can swim? ", parrot.canSwim(), Matchers.is(false));
 	}
 	
 	@Test
 	public void testParrotCanFly_ReturnTrue() {
-		Parrot parrot = new Parrot();
+		Parrot parrot = new Parrot(null);
 		Assert.assertThat("parrot can swim? ", parrot.canFly(), Matchers.is(true));
 	}
 	

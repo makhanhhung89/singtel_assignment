@@ -26,12 +26,9 @@ public class Fish extends Animal {
 		LARGE, SMALL, MEDIUM;
 	}
 	
-	private Size size = Size.SMALL;
-	private String color = "white";
+	private final Size size;
+	private final String color;
 	
-	public Fish() {
-		super();
-	}
 	public Fish(Size size, String color) {
 		super();
 		this.size = size;

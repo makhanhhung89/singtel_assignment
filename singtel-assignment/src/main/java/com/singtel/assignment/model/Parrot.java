@@ -2,17 +2,16 @@ package com.singtel.assignment.model;
 
 public class Parrot extends Bird {
 
-	private MakeSoundable liveNear;
+	/**
+	 * if liveNear is null, it means the parrot live with nothing
+	 */
+	private final MakeSoundable liveNear;
 	
 	public Parrot(MakeSoundable liveNear) {
 		super();
 		this.liveNear = liveNear;
 	}
 	
-	public Parrot() {
-		super();
-	}
-
 	@Override
 	public void sing() {
 		if (liveNear == null) {
