@@ -27,4 +27,28 @@ public class BirdTest extends AbstractTest {
 		bird.walk();
 		Assert.assertThat("Bird walk correcly", systemOutRule.getLog(), Matchers.is("I am walking\n"));
 	}
+	
+	@Test
+	public void testBirdCanSwim_ReturnFalse() {
+		Bird bird = new Bird();
+		Assert.assertThat("bird can swim? ", bird.canSwim(), Matchers.is(false));
+	}
+	
+	@Test
+	public void testBirdCanFly_ReturnTrue() {
+		Bird bird = new Bird();
+		Assert.assertThat("bird can Fly? ", bird.canFly(), Matchers.is(true));
+	}
+	
+	@Test
+	public void testBirdCanSing_ReturnTrue() {
+		Bird bird = new Bird();
+		Assert.assertThat("bird can sing? ", bird.canSing(), Matchers.is(true));
+	}
+	
+	@Test
+	public void testBirdCanWalk_ReturnTrue() {
+		Bird bird = new Bird();
+		Assert.assertThat("bird can walk? ", bird.canWalk(), Matchers.is(true));
+	}
 }
